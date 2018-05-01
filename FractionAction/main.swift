@@ -1,10 +1,4 @@
-//
-//  main.swift
-//  ChipsFastFoodEmporium
-//
-//  Created by Gordon, Russell on 2018-04-04.
-//  Copyright © 2018 Gordon, Russell. All rights reserved.
-//
+
 
 import Foundation
 
@@ -23,7 +17,7 @@ while(true) {
     guard let numeratorInput = Int(rawNumeratorInput) else {
         continue
     }
-    if numeratorInput > 0 {
+    if numeratorInput < 0 {
         print("Numerator cannot be negative!")
         continue
     }
@@ -36,24 +30,22 @@ while(true) {
     guard let denominatorInput = Int(rawDenominatorInput) else {
         continue
     }
-    if denominatorInput >= 1 {
-        print("Denominator cannot be zero or negative!")
+    if denominatorInput < 1 {
+        print("Denominator can't be zero or negative!")
         continue
     }
     validDenominator = denominatorInput
     break
 }
 
-// PROCESS
+ //PROCESS
 // Implement the primary logic of the problem here
-
-//gcf finding thing
 
 var a = 0
 var b = 0
 var substitute = 0
 
-//thanks mr euclid
+
 
 if validNumerator >= validNumerator {
     a = validNumerator
@@ -63,17 +55,7 @@ if validNumerator >= validNumerator {
     b = validNumerator
 }
 
-while b != 0 {
-    substitute = a % b
-    a = b
-    b = substitute
-}
-print("The GCF is \(a)")
-
-
-
-// OUTPUT
-// Report results to the user here
+//cool stuff
 
 if validNumerator/validDenominator > 0 && validNumerator%validDenominator/a > 0 {
     print("Your mixed fraction is \(validNumerator/validDenominator) \((validNumerator%validDenominator)/a)/\((validDenominator)/a)")
@@ -83,5 +65,6 @@ else if validNumerator%validDenominator/a > 0 {
 } else {
     print("Your whole number is \(validNumerator/validDenominator)")
 }
+
 
 
