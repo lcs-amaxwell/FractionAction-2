@@ -6,8 +6,7 @@ var validNumerator = 0
 var validDenominator = 0
 var GCF = 0
 
-// INPUT
-// Collect and filter user input here
+// input
 
 while(true) {
     print("Numerator?")
@@ -38,14 +37,23 @@ while(true) {
     break
 }
 
- //PROCESS
-// Implement the primary logic of the problem here
+//process
+
+
+if validNumerator % validDenominator == 0 {
+    print("The result is \n\(validNumerator/validDenominator)")
+    exit(9)
+}
+
 
 var a = 0
 var b = 0
 var substitute = 0
 
-
+if validNumerator == 0 {
+    
+    
+}
 
 if validNumerator >= validNumerator {
     a = validNumerator
@@ -55,16 +63,16 @@ if validNumerator >= validNumerator {
     b = validNumerator
 }
 
-//cool stuff
+
+//output orgnazation 
 
 if validNumerator/validDenominator > 0 && validNumerator%validDenominator/a > 0 {
     print("Your mixed fraction is \(validNumerator/validDenominator) \((validNumerator%validDenominator)/a)/\((validDenominator)/a)")
-}
-else if validNumerator%validDenominator/a > 0 {
+    
+} else if validNumerator%validDenominator/a > 0 {
     print("Your fraction is \((validNumerator%validDenominator)/a)/\((validDenominator)/a)")
 } else {
     print("Your whole number is \(validNumerator/validDenominator)")
 }
-
 
 
