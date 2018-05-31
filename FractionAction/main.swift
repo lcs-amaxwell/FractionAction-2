@@ -51,11 +51,11 @@ var b = 0
 var substitute = 0
 
 if validNumerator == 0 {
-    
-    
+
+
 }
 
-if validNumerator >= validNumerator {
+if validNumerator >= validDenominator {
     a = validNumerator
     b = validDenominator
 } else {
@@ -64,11 +64,11 @@ if validNumerator >= validNumerator {
 }
 
 
-//output orgnazation 
+//output orgnazation
 
 if validNumerator/validDenominator > 0 && validNumerator%validDenominator/a > 0 {
     print("Your mixed fraction is \(validNumerator/validDenominator) \((validNumerator%validDenominator)/a)/\((validDenominator)/a)")
-    
+
 } else if validNumerator%validDenominator/a > 0 {
     print("Your fraction is \((validNumerator%validDenominator)/a)/\((validDenominator)/a)")
 } else {
